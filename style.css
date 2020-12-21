@@ -57,7 +57,21 @@ a.active, a:hover{
 	top: 400px;
 	background: #FFFFFF;
 }
-h1{
+.header{
+	position: relative;
+}
+.text-block{
+	position: absolute;
+	bottom: 450px;
+	right: 130px;
+	color: white;
+	padding-left: 300px;
+	padding-right: 500px;
+}
+.logo{
+	font-size: 100px;
+}
+.webTitle{
 	text-align: center;
 	padding: 9%;
 	font-size: 50px;
