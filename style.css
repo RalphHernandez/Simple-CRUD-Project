@@ -50,13 +50,6 @@ a.active, a:hover{
 	height: 100%;
 	float: none;
 }
-.description{
-	width: 100%;
-	height: 1000px;
-	position: absolute;
-	top: 400px;
-	background: #FFFFFF;
-}
 .header{
 	position: relative;
 }
@@ -76,4 +69,23 @@ a.active, a:hover{
 	padding: 9%;
 	font-size: 50px;
 	color: #FFFFFF;
+}
+.webDescriptionBox{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	padding: 20% 20%;
+}
+.webDescriptionBoxGif{
+	width: 100px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+	display: block;
+}
+p{
+	text-align: center;
+	font-size: 20px;
 }
