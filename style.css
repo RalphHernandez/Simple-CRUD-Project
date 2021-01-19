@@ -1,4 +1,133 @@
-*{
+body{
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV */
+.zone {
+	cursor: pointer;
+	background-color: #FFFFFF;
+    color: black;
+    font-size: 2em;
+    border: 0;
+	transition: all 0.3s linear;
+}
+
+.sticky{ /*sticks nav bar at the top on scoll*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main_nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+	margin: 0;
+	padding: 10px;
+}
+
+.nav_button{
+	padding: 19px 15px;
+	border-radius: 10px;
+}
+
+a.active, a:hover{
+	background-color: #B5A642;
+	color: white;
+	transition: .5s;
+}
+
+/*shrinks components when screen is < 600px*/
+@media only screen and (max-width: 600px){
+    .main_nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push{
+    margin-left: auto;
+}
+
+li{
+    padding: 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* COVER */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*Vieport Height - adjusts height according to screen*/
+}
+
+.cover{
+	width: 100%; /*em vs rem??*/
+}
+
+/* DIVIDER */
+.divider{
+	background-color: #FDB9AB;
+	height: 70vh;
+}
+
+h1{
+	text-align: center;
+	padding: 15%;
+	font-size: 100px;
+	color: white;
+}
+
+/* GRID */
+.grid_wrapper{
+	margin-top: 2%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img{
+	width: 100%;
+	height: 100%;
+}
+
+.box{
+    background-color: #444;
+    margin: 20px;
+}
+
+footer{
+    text-align: center  ;
+}
+
+/* DESCRIPTION BOX */
+p{
+	text-align: center;
+	padding: 20%;
+	font-size: 20px;
+}
+
+
+/* ANIMATiON*/
+.box:hover{ /*rotates to 7 deg on hover*/
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+/* FOOTER */
+.footer{
+	background-color: #FDB9AB;
+	padding: 3%;
+}
+/*{
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -88,4 +217,4 @@ a.active, a:hover{
 p{
 	text-align: center;
 	font-size: 20px;
-}
+}*/
