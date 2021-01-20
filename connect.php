@@ -13,7 +13,35 @@
         $stmt -> bind_param("ssss", $plant_name, $date_potted, $plant_status, $recommendation);
         $stmt -> execute();
         echo "Plant successfully added!";
-        $stmt -> close();
-        $conn -> close();
     }
 ?>
+/*  $plant_name = $_POST['plantName'];
+    $date_potted = $_POST['datePotted'];
+    $plant_status = $_POST['pstatus'];
+    $recommendation = $_POST['recommendation'];
+
+    if(!empty($plant_name) || !empty($date_potted) || !empty($plant_status) || !empty($recommendation)){
+        $host = "localhost";
+        $dbUserName = "root";
+        $dbPassword = "";
+        $dbName = "phr";
+
+        $conn = new mysqli($host, $dbUserName, $dbPassword, $dbName);
+
+        if(mysqli_connect_error()){
+            die('Connect Error('. mysqli_connect_error().')'. mysqli_connect_error());
+        }else{
+            $INSERT = "INSERT INTO phr (plant_name, date_potted, plant_status, recommendation)
+                values(?, ?, ?, ?)";
+            
+            $sql = $conn->prepare($INSERT);
+            $sql->bind_param("ssss", $plant_name, $date_potted, $plant_status, $recommendation);
+            $sql->execute();
+            echo "Plant successfully added!";
+            $sql->close();
+            $conn->close();
+        }
+    }else{
+        echo "All fields are required!";
+        die();
+    }*/
